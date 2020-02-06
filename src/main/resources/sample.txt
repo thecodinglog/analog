@@ -1,0 +1,117 @@
+[2020-02-04 11:20:49, 447] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 449] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PageLogger.doFilter(132) | [PageLogger] Check userid : 41090455, pgmId : M202010010, userIp : 10.110.1.125, reqUri : /M20/M202010010.jsp
+[2020-02-04 11:20:49, 449] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PageLogger.doFilter(136) | [PageLogger] Logging userid : 41090455, pgmId : M202010010, userIp : 10.110.1.125, reqUri : /M20/M202010010.jsp
+[2020-02-04 11:20:49, 449] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosAuditAttributes.a(253) | Default Audit info : [ObjectType=C][ObjectId=unknown][ProgramId=pageConnLogging-servic]
+[2020-02-04 11:20:49, 449] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(219) | ServiceName:[pageConnLogging-service] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 450] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.startTransaction(122) | Glue: Transaction Start
+[2020-02-04 11:20:49, 450] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.a(106) | Start TX : tx3
+[2020-02-04 11:20:49, 450] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(145) | ActivityName:[pageConnLogging-service][Logging] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 450] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : USER_ID - 41090455
+[2020-02-04 11:20:49, 450] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : PGM_ID - M202010010
+[2020-02-04 11:20:49, 450] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : REQUEST_URI - /M20/M202010010.jsp
+[2020-02-04 11:20:49, 450] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : CLIENT_IP - 10.110.1.125
+[2020-02-04 11:20:49, 450] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : ObjectType - C
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : ObjectId - unknown
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : ProgramId - pageConnLogging-servic
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : Timestamp - 2020-02-04 11:20:49.449
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : ObjectType - C
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : ObjectId - unknown
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : ProgramId - pageConnLogging-servic
+[2020-02-04 11:20:49, 451] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.setPosParameterAllNamed(161) | setPosParameterAllNamed : Timestamp - 2020-02-04 11:20:49.449
+[2020-02-04 11:20:49, 452] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosJdbcDao.a(696) | Executing Query StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 452] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosJdbcTemplate.update(240) | Executing SQL update [
+INSERT INTO M90APUSER.TB_M90_CONN_USER_LOG(USER_ID, CONN_DH, PGM_ID, PGM_NM, CLIENT_IP
+
+,CREATED_OBJECT_TYPE ,CREATED_OBJECT_ID ,CREATED_PROGRAM_ID ,CREATION_TIMESTAMP
+,LAST_UPDATED_OBJECT_TYPE ,LAST_UPDATED_OBJECT_ID ,LAST_UPDATE_PROGRAM_ID ,LAST_UPDATE_TIMESTAMP)
+
+VALUES(
+            SUBSTR(?,1,(SELECT DATA_LENGTH FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'TB_M90_CONN_USER_LOG' AND COLUMN_NAME = 'USER_ID'))
+           ,SYSDATE
+           ,SUBSTR(?,1,(SELECT DATA_LENGTH FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'TB_M90_CONN_USER_LOG' AND COLUMN_NAME = 'PGM_ID'))
+           ,(SELECT SUBSTR(PROGRAM_NAME,1,(SELECT DATA_LENGTH FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'TB_M90_CONN_USER_LOG' AND COLUMN_NAME = 'PGM_NM')) FROM M90APUSER.TB_PROGRAM WHERE PROGRAM_URL = ? AND ROWNUM = 1)
+           ,SUBSTR(?,1,(SELECT DATA_LENGTH FROM USER_TAB_COLUMNS WHERE TABLE_NAME = 'TB_M90_CONN_USER_LOG' AND COLUMN_NAME = 'CLIENT_IP'))
+
+,? ,? ,? ,?
+,? ,? ,? ,?
+)
+]
+[2020-02-04 11:20:49, 452] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 1, parameter value [41090455], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 452] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 2, parameter value [M202010010], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 452] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 3, parameter value [/M20/M202010010.jsp], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 452] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 4, parameter value [10.110.1.125], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 453] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 5, parameter value [C], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 453] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 6, parameter value [unknown], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 453] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 7, parameter value [pageConnLogging-servic], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 453] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 8, parameter value [2020-02-04 11:20:49.449], value class [java.sql.Timestamp], SQL type unknown
+[2020-02-04 11:20:49, 453] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 9, parameter value [C], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 454] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 10, parameter value [unknown], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 454] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 11, parameter value [pageConnLogging-servic], value class [java.lang.String], SQL type unknown
+[2020-02-04 11:20:49, 454] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosStatementCreatorUtils.setParameterValue(47) | Setting SQL statement parameter value: column index 12, parameter value [2020-02-04 11:20:49.449], value class [java.sql.Timestamp], SQL type unknown
+[2020-02-04 11:20:49, 455] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosJdbcTemplate$1.doInPreparedStatement(254) | SQL update affected 1 rows
+[2020-02-04 11:20:49, 455] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosJdbcDao.a(699) | Executing Query EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[3]
+[2020-02-04 11:20:49, 456] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - DhtmlxActivity.makeMessage(457) | 생성된메세지 : 1건의 Data가 등록되었습니다., 우선순위 : 999
+[2020-02-04 11:20:49, 456] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - FormActivity.doMainActivity(124) | 1건의 Data가 등록되었습니다.
+[2020-02-04 11:20:49, 456] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(188) | ActivityName:[pageConnLogging-service][Logging] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[6]
+[2020-02-04 11:20:49, 457] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.commit(145) | Glue: Commit Complete
+[2020-02-04 11:20:49, 457] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.b(141) | Commit TX : tx3
+[2020-02-04 11:20:49, 457] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.clearTransactionStatus(217) | Glue: Transaction Status is Cleared
+[2020-02-04 11:20:49, 457] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(279) | ServiceName:[pageConnLogging-service] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[8]
+[2020-02-04 11:20:49, 621] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 622] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosAuditAttributes.a(253) | Default Audit info : [ObjectType=A][ObjectId=41090455][ProgramId=lov-service]
+[2020-02-04 11:20:49, 622] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(219) | ServiceName:[lov-service] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 622] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.startTransaction(122) | Glue: Transaction Start
+[2020-02-04 11:20:49, 622] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.a(106) | Start TX : tx4
+[2020-02-04 11:20:49, 622] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(145) | ActivityName:[lov-service][LOV조회] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 623] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [selectValue] 지정값 없음
+[2020-02-04 11:20:49, 623] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [isAscending] 지정값 없음
+[2020-02-04 11:20:49, 623] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [displayType] 지정값 없음
+[2020-02-04 11:20:49, 623] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(188) | ActivityName:[lov-service][LOV조회] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[1]
+[2020-02-04 11:20:49, 624] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.commit(145) | Glue: Commit Complete
+[2020-02-04 11:20:49, 624] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.b(141) | Commit TX : tx4
+[2020-02-04 11:20:49, 624] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.clearTransactionStatus(217) | Glue: Transaction Status is Cleared
+[2020-02-04 11:20:49, 624] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(279) | ServiceName:[lov-service] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[2]
+[2020-02-04 11:20:49, 625] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 625] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosAuditAttributes.a(253) | Default Audit info : [ObjectType=A][ObjectId=41090455][ProgramId=lov-service]
+[2020-02-04 11:20:49, 625] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(219) | ServiceName:[lov-service] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 626] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.startTransaction(122) | Glue: Transaction Start
+[2020-02-04 11:20:49, 626] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.a(106) | Start TX : tx4
+[2020-02-04 11:20:49, 626] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(145) | ActivityName:[lov-service][LOV조회] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 626] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [selectValue] 지정값 없음
+[2020-02-04 11:20:49, 626] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [isAscending] 지정값 없음
+[2020-02-04 11:20:49, 627] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [displayType] 지정값 없음
+[2020-02-04 11:20:49, 627] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(188) | ActivityName:[lov-service][LOV조회] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[1]
+[2020-02-04 11:20:49, 628] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.commit(145) | Glue: Commit Complete
+[2020-02-04 11:20:49, 629] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.b(141) | Commit TX : tx4
+[2020-02-04 11:20:49, 629] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.clearTransactionStatus(217) | Glue: Transaction Status is Cleared
+[2020-02-04 11:20:49, 629] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(279) | ServiceName:[lov-service] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[4]
+[2020-02-04 11:20:49, 629] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 630] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosAuditAttributes.a(253) | Default Audit info : [ObjectType=A][ObjectId=41090455][ProgramId=lov-service]
+[2020-02-04 11:20:49, 630] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(219) | ServiceName:[lov-service] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 630] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.startTransaction(122) | Glue: Transaction Start
+[2020-02-04 11:20:49, 630] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.a(106) | Start TX : tx4
+[2020-02-04 11:20:49, 630] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(145) | ActivityName:[lov-service][LOV조회] StartTime[Tue Feb 04 11:20:49 KST 2020]
+[2020-02-04 11:20:49, 631] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [selectValue] 지정값 없음
+[2020-02-04 11:20:49, 631] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [isAscending] 지정값 없음
+[2020-02-04 11:20:49, 631] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosLOV.getParameter(92) | Parameter [displayType] 지정값 없음
+[2020-02-04 11:20:49, 631] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosActivityHandler.runActivity(188) | ActivityName:[lov-service][LOV조회] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[1]
+[2020-02-04 11:20:49, 632] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.commit(145) | Glue: Commit Complete
+[2020-02-04 11:20:49, 632] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.b(141) | Commit TX : tx4
+[2020-02-04 11:20:49, 632] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosDataSourceTransactionManager.clearTransactionStatus(217) | Glue: Transaction Status is Cleared
+[2020-02-04 11:20:49, 632] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosBizController.doAction(279) | ServiceName:[lov-service] EndTime[Tue Feb 04 11:20:49 KST 2020] RunTime:[2]
+[2020-02-04 11:20:49, 633] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 633] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PageLogger.doFilter(132) | [PageLogger] Check userid : 41090455, pgmId : _buttonSecurityData, userIp : 10.110.1.125, reqUri : /M20/_buttonSecurityData.jsp
+[2020-02-04 11:20:49, 633] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(105) | pageID : M202010010
+[2020-02-04 11:20:49, 634] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(118) | << Security Buttons : find,save,excel_grid,openBarCodePopUp >>
+[2020-02-04 11:20:49, 721] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 722] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PageLogger.doFilter(132) | [PageLogger] Check userid : 41090455, pgmId : _buttonSecurityData, userIp : 10.110.1.125, reqUri : /M20/_buttonSecurityData.jsp
+[2020-02-04 11:20:49, 722] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(105) | pageID : M202010010
+[2020-02-04 11:20:49, 723] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(118) | << Security Buttons : find,save,excel_grid,openBarCodePopUp >>
+[2020-02-04 11:20:49, 985] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:49, 985] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PageLogger.doFilter(132) | [PageLogger] Check userid : 41090455, pgmId : _buttonSecurityData, userIp : 10.110.1.125, reqUri : /M20/_buttonSecurityData.jsp
+[2020-02-04 11:20:49, 985] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(105) | pageID : M202010010
+[2020-02-04 11:20:49, 986] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(118) | << Security Buttons : find,save,excel_grid,openBarCodePopUp >>
+[2020-02-04 11:20:50, 025] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PosSecurityFilter.doFilter(225) | doFilter : Start Security Filter !
+[2020-02-04 11:20:50, 026] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - PageLogger.doFilter(132) | [PageLogger] Check userid : 41090455, pgmId : _buttonSecurityData, userIp : 10.110.1.125, reqUri : /M20/_buttonSecurityData.jsp
+[2020-02-04 11:20:50, 026] DEBUG  [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(105) | pageID : M202010010
+[2020-02-04 11:20:50, 026] INFO   [[ACTIVE] ExecuteThread: '13' for queue: 'weblogic.kernel.Default (self-tuning)'] - ___buttonsecuritydata._jspService(118) | << Security Buttons : find,save,excel_grid,openBarCodePopUp >>
