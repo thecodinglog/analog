@@ -6,10 +6,21 @@ import java.util.List;
 public class LogMessageBundle {
     private List<LogMessage> logMessages = new ArrayList<>();
     private boolean isCompleted;
+    private int index = 0;
 
-    public void addMessage(LogMessage logMessage) {
+
+    synchronized public void addMessage(LogMessage logMessage) {
         logMessages.add(logMessage);
         isCompleted = checkCompleted();
+    }
+
+    synchronized public LogMessage getNextMessage() {
+        LogMessage logMessage = logMessages.get(index);
+        index++;
+        return logMessage;
+    }
+    synchronized public boolean hasNext(){
+        return logMessages.size() > index;
     }
 
     private boolean checkCompleted() {

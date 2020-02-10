@@ -32,7 +32,9 @@ public class LogMessageDistributor implements Runnable {
                         if (!logMessageBundleMap.containsKey(logMessage.getThreadName())) {
                             logMessageBundleMap.put(logMessage.getThreadName(), new LogMessageBundle());
                         }
-                        logMessageBundleMap.get(logMessage.getThreadName()).addMessage(logMessage);
+                        LogMessageBundle logMessageBundle = logMessageBundleMap.get(logMessage.getThreadName());
+                        logMessageBundle.addMessage(logMessage);
+
                     }
                     System.out.println(logMessage.toString());
                 }
